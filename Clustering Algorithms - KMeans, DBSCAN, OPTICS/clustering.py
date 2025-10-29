@@ -17,8 +17,9 @@ from sklearn.cluster import OPTICS
 from sklearn.neighbors import NearestNeighbors
 
 # load data
-df = pd.read_excel("./Data/Test_GeneExpressionData.xlsx")
+df = pd.read_excel("./Clustering Algorithms - KMeans, DBSCAN, OPTICS/Data/Test_GeneExpressionData.xlsx")
 df.columns
+df.shape
 
 # number of unique cell types: 10
 df['Coded cell type'].unique()
@@ -43,7 +44,7 @@ for i in k_range:
     kmeans.fit(df_scaled)
     inertias.append(kmeans.inertia_)
 plt.figure()
-plt.plot(k_range, inertias, marker='o')
+plt.plot(k_range, inertias, marker='o')### 
 plt.title('Elbow method')
 plt.xlabel('Number of clusters (K)')
 plt.ylabel('Within-Cluster Sum of Squares')
