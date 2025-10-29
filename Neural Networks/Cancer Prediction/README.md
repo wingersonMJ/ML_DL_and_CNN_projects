@@ -1,8 +1,7 @@
 # Cancer prediction using Gene Expression Data
 
 This project demonstrates a fully connected feedforward neural network implemented in PyTorch for 
-binary classification. The dataset contains gene expressions, and the target is 
-cancer development. 
+binary classification. The dataset contains gene expressions, and the target is trying to predict if a cell is cancerous. 
 
 ## Architecture:
 - Input Layer: Takes ```nFeatures``` continuous features
@@ -34,7 +33,7 @@ In the final epoch of training, the train accuracy was 98.7%, and validation acc
 the test set, accuracy was 93.9%, sensitivity was 95.5%, and specificity was 92.2%. 
 
 The distribution plot shows strong separation between classes. A model with only two layers and run 
-for 2500 epochs successfully distinguished between patients who do vs don't have cancer.  
+for 2500 epochs successfully distinguished between cell that are vs are not cancerous.  
 
 **Figure.** Distribution of predicted probabilites for each class in the test set.  
 <img src="./figs/distribution_plot.png" size=400>
