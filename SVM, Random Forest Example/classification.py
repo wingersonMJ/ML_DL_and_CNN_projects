@@ -162,7 +162,7 @@ plt.xlabel('Predicted Probability')
 plt.ylabel('Density')
 plt.title('Predicted Probabilities for SVM on Test Data')
 plt.legend(loc='upper center')
-plt.figure("./SVM, Random Forest Example/figs/svm_kde.png")
+plt.savefig("./SVM, Random Forest Example/figs/svm_kde.png")
 plt.show()
 
 
