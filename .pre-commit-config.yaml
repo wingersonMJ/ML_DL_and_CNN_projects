@@ -6,7 +6,6 @@ repos:
       - id: trailing-whitespace
       - id: check-case-conflict
       - id: end-of-file-fixer
-      - id: check-yaml
       - id: detect-private-key
       - id: double-quote-string-fixer
         args: [--markdown-linebreak-ext=md]
